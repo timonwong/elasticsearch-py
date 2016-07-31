@@ -46,7 +46,7 @@ Example Usage
 ::
 
     from datetime import datetime
-    from elasticsearch import Elasticsearch
+    from elasticsearch1 import Elasticsearch
     es = Elasticsearch()
 
     doc = {
@@ -139,7 +139,7 @@ nodes upon startup, periodically and/or on failure. See
 
 Some example configurations::
 
-    from elasticsearch import Elasticsearch
+    from elasticsearch1 import Elasticsearch
 
     # by default we don't sniff, ever
     es = Elasticsearch()
@@ -158,7 +158,7 @@ SSL and Authentication
 You can configure the client to use ``SSL`` for connecting to your
 elasticsearch cluster, including certificate verification and http auth::
 
-    from elasticsearch import Elasticsearch
+    from elasticsearch1 import Elasticsearch
 
     # you can use RFC-1738 to specify the url
     es = Elasticsearch(['https://user:secret@localhost:443'])
@@ -219,7 +219,7 @@ restricted so that ``GET`` requests won't accept body. In that case use the
 ``send_get_body_as`` parameter of :class:`~elasticsearch.Transport` to send all
 bodies via post::
 
-    from elasticsearch import Elasticsearch
+    from elasticsearch1 import Elasticsearch
     es = Elasticsearch(send_get_body_as='POST')
 
 Running with AWS Elasticsearch service
@@ -228,7 +228,7 @@ Running with AWS Elasticsearch service
 If you want to use this client with IAM based authentication on AWS you can use
 the `requests-aws4auth`_ package::
 
-    from elasticsearch import Elasticsearch, RequestsHttpConnection
+    from elasticsearch1 import Elasticsearch, RequestsHttpConnection
     from requests_aws4auth import AWS4Auth
 
     host = 'YOURHOST.us-east-1.es.amazonaws.com'

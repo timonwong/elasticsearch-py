@@ -4,8 +4,8 @@ import urllib3
 import warnings
 from requests.auth import AuthBase
 
-from elasticsearch.exceptions import TransportError, ConflictError, RequestError, NotFoundError
-from elasticsearch.connection import RequestsHttpConnection, \
+from elasticsearch1.exceptions import TransportError, ConflictError, RequestError, NotFoundError
+from elasticsearch1.connection import RequestsHttpConnection, \
     Urllib3HttpConnection
 
 from .test_cases import TestCase

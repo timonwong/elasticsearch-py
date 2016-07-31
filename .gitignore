@@ -1,6 +1,7 @@
 .*.swp
 *~
 *.py[co]
+.idea
 .coverage
 test_elasticsearch/cover
 test_elasticsearch/local.py

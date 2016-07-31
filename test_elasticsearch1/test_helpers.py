@@ -2,8 +2,8 @@ import mock
 import time
 import threading
 
-from elasticsearch import helpers, Elasticsearch
-from elasticsearch.serializer import JSONSerializer
+from elasticsearch1 import helpers, Elasticsearch
+from elasticsearch1.serializer import JSONSerializer
 
 from .test_cases import TestCase
 
